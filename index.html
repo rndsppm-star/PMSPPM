@@ -1,17 +1,100 @@
 <!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+  <title>PMSP SYSTEM - ประตูทางเข้า</title>
+  
+  <link rel="icon" type="image/png" href="ppm_icon-removebg-preview.png">
+  <link rel="apple-touch-icon" href="ppm_icon-removebg-preview.png">
 
-<html>
-   <head>
-<meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <base target="_top">
-      <title>PMSP SYSTEM</title>
-      
-      <link rel="icon" type="image/png" href="ppm_icon-removebg-preview.png">
-      
-      <link rel="apple-touch-icon" href="ppm_icon-removebg-preview.png">
-   </head>
-   <body>
-      <iframe style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;border: 0;" src="https://script.google.com/macros/s/AKfycbyLXBgyLp7Il9fdBCm1SjMtIH5V8tyDaQeLxfHBw944xAWNBrgeTphev2V9If-QsAwhIQ/exec"></iframe>
-   </body>
-</html> 
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    .card {
+      background: white;
+      padding: 40px 30px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      text-align: center;
+      max-width: 350px;
+      width: 90%;
+    }
+
+    .logo {
+      width: 100px;
+      height: 100px;
+      margin-bottom: 20px;
+      object-fit: contain;
+    }
+
+    h2 {
+      margin: 0;
+      color: #333;
+      font-size: 1.5rem;
+      font-weight: 800;
+    }
+
+    p {
+      color: #666;
+      font-size: 0.95rem;
+      margin-bottom: 30px;
+    }
+
+    .btn-start {
+      display: inline-block;
+      background: #0d6efd;
+      color: white;
+      text-decoration: none;
+      padding: 15px 30px;
+      border-radius: 50px;
+      font-size: 1.1rem;
+      font-weight: bold;
+      width: 80%;
+      box-shadow: 0 4px 15px rgba(13, 110, 253, 0.4);
+      transition: transform 0.2s, background 0.2s;
+    }
+
+    .btn-start:hover {
+      background: #0b5ed7;
+      transform: translateY(-2px);
+    }
+
+    .btn-start:active {
+      transform: translateY(2px);
+    }
+    
+    .footer-text {
+      margin-top: 20px;
+      font-size: 0.75rem;
+      color: #999;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <img src="ppm_icon-removebg-preview.png" alt="PMSP Logo" class="logo" onerror="this.src='https://cdn-icons-png.flaticon.com/512/3003/3003280.png'">
+    
+    <h2>PMSP SYSTEM</h2>
+    <p>ระบบจัดการใบสั่งซ่อมบำรุงเครื่องจักร</p>
+    
+    <a href="https://script.google.com/macros/s/AKfycbyLXBgyLp7Il9fdBCm1SjMtIH5V8tyDaQeLxfHBw944xAWNBrgeTphev2V9If-QsAwhIQ/exec" class="btn-start">
+      เข้าสู่ระบบ
+    </a>
+    
+    <div class="footer-text">v 1.0.0 | Secure Login</div>
+  </div>
+
+</body>
+</html>
