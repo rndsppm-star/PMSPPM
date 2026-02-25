@@ -1,18 +1,47 @@
 <!DOCTYPE html>
-
 <html>
    <head>
-<meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
       <base target="_top">
       <title>PMSP SYSTEM</title>
       
       <link rel="icon" type="image/png" href="ppm_icon-removebg-preview.png">
-      
       <link rel="apple-touch-icon" href="ppm_icon-removebg-preview.png">
+
+      <style>
+         /* 🎯 จัดระเบียบหน้าจอหลักไม่ให้มีขอบขาว */
+         html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden; /* ล็อกหน้าจอหลักไม่ให้ขยับ */
+            background-color: #f4f7f6;
+         }
+
+         /* 🎯 โค้ดวิชามาร ซ่อนแบนเนอร์กวนใจของ Google */
+         .iframe-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+         }
+
+         .iframe-container iframe {
+            position: absolute;
+            top: -36px; /* ดันหน้าต่าง iframe ขึ้นไป 36px เพื่อให้แบนเนอร์หลุดขอบจอ */
+            left: 0;
+            width: 100%;
+            height: calc(100% + 36px); /* ยืดความสูงชดเชยส่วนที่ถูกดันขึ้นไป */
+            border: 0;
+         }
+      </style>
    </head>
    <body>
-      <iframe style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;border: 0;" src="https://script.google.com/macros/s/AKfycbyLXBgyLp7Il9fdBCm1SjMtIH5V8tyDaQeLxfHBw944xAWNBrgeTphev2V9If-QsAwhIQ/exec?authuser=1"></iframe>
+      <div class="iframe-container">
+         <iframe src="https://script.google.com/macros/s/AKfycbyLXBgyLp7Il9fdBCm1SjMtIH5V8tyDaQeLxfHBw944xAWNBrgeTphev2V9If-QsAwhIQ/exec" allow="camera; microphone; fullscreen"></iframe>
+      </div>
    </body>
 </html>
-
